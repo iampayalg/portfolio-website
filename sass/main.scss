@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+@import "variables";
+@import "header";
+@import "banner";
+
+.container{
+    max-width: 1111px;
+    width: 100%;
+    margin: 0px auto;
+}
+p{
+    @include paragraphs
+}
+h1{
+    @include heading1
+}
+h2{
+    @include heading2
+}
+button{
+    @include buttons
+}
+.body-btn{
+    width: 228px;
+    height: 56px;
+    background-color: $body-btn-color;
+    color: white;
+    &:hover{
+        background-color: $body-btn-active;
+    }
+}
+.introduction{
+    display: flex;
+    align-items: center;
+    gap: 125px;
+    margin-top: 136px;
+    img{
+        width: 445px;
+    }
+}
+.introduction-content{
+    p{
+        margin: 24px 0px;
+    }
+}
+.work{
+    text-align: center;
+    h4{
+        font-size: 32px;
+    }
+}
+.work-images{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 56px 0px;
+    img{
+        border-radius: 10px;
+        width: 540px;
+        height: 360px;
+    }
+}
+
+.arrows {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    i{
+        background-color: black;
+        color: white;
+        padding: 24px;
+        border-radius: 50%;
+        &:hover{
+            background-color: $navbar-btn-active;
+            cursor: pointer;
+        }
+    }
+}
+.contact
+{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 88px 0px 56px;
+    padding: 65px 85px;
+    border-radius: 10px;
+    p{
+        color: white;
+    }
+
+}
+.contact-content{
+    width: 540px;
+}
+@media screen and (max-width:1100px){
+    .container{
+        width: 690px;
+    }
+    .banner{
+        h1{
+            font-size: 44px;
+        }
+    }
+    .banner-grid-images{
+        grid-row-gap:24px;
+    }
+    .item-1{
+        width: 333px;
+        height: 364px;
+    }
+    .item-2, .item-3{
+        width: 155px;
+        height: 182px;
+    }
+    .item-4{
+        grid-row: 3;
+        width: 333px;
+        height: 182px;
+    }
+    .item-5{
+        width: 333px;
+        height: 158px;
+    }
+    .item-6{
+        grid-row: 3;
+        grid-column: 2;
+        height: 182px;
+        width: 333px;
+    }
+    .introduction{
+        gap: 0px;
+        img{
+            width: 364px;
+            position: relative;
+            left: -37px;
+        }
+        h2{
+            font-size: 32px;
+        }
+
+    }
+    .contact{
+        flex-direction: column;
+        text-align: center;
+        p{
+            margin: 26px 0px;
+        }
+        h2{
+            font-size: 32px;
+        }
+    }
+}
+@media screen and (max-width:730px){
+    .container{
+        width: 443px;
+    }
+    p{
+        font-size: 16px;
+    }
+    .banner{
+        h1{
+            font-size: 36px;
+        }
+    }
+    .banner-grid-images{
+        grid-template-columns:223px;
+    }
+    .item-1{
+        width: 443px;
+        height: 364px;
+    }
+    .item-2, .item-3 {
+        grid-row: 3;
+        width: 210px;
+    }
+
+  
+    .item-4{
+        grid-row: 5;
+        width: 443px;
+        grid-column: 1/2;
+    }
+    .item-5{
+        grid-row: 4;
+        width: 443px;
+        grid-column: 1/2;
+    }
+    .item-6{
+        grid-row: 6;
+        grid-column: 1/2;
+        width: 443px;
+    }
+    .introduction{
+        flex-direction: column;
+        text-align: center;
+        img{
+            width: 300px;
+            left: 0;
+            margin-bottom: 40px;
+        }
+        h2{
+            font-size: 26px;
+        }
+        p{
+            margin:24px 46px;
+        }
+    }
+    .body-btn{
+        width: 176px;
+        height: 44px;
+    }
+    .work{
+        h4{
+            font-size: 24px;
+        }
+        img{
+            width: 270px;
+            height: 180px;
+        }
+    }
+    .contact{
+        padding: 65px 0px;
+        p{
+            margin:26px 120px;
+        }
+    }
+
+}

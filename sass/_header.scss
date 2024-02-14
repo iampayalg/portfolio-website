@@ -1,0 +1,15 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbtn{
+    background-color: black;
+    border: none;
+    border-radius: 28px;
+    color: white;
+    padding: 14px 45px;
+    &:hover{
+        background-color: $navbar-btn-active;
+    }
+}

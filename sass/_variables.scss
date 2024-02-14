@@ -1,0 +1,27 @@
+$navbar-btn-active:#755CDE;
+$body-btn-active:#F6A560;
+$body-btn-color:#EB7565;
+$paragraph-color:#7A746E;
+@mixin paragraphs{
+    font-size: 18px;
+    line-height: 28px;
+    color: $paragraph-color;
+    margin: 0px;
+}
+@mixin heading1{
+    font-size: 56px;
+    font-weight: bold;
+}
+@mixin heading2{
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0px;
+}
+@mixin buttons {
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: bold;
+    border: none;
+    border-radius: 28px;
+    cursor: pointer;
+}

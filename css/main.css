@@ -1,0 +1,303 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbtn {
+  background-color: black;
+  border: none;
+  border-radius: 28px;
+  color: white;
+  padding: 14px 45px;
+}
+.navbtn:hover {
+  background-color: #755CDE;
+}
+
+.banner {
+  text-align: center;
+}
+.banner h1 {
+  margin: 66px 0px 23px;
+}
+.banner p {
+  margin-bottom: 80px;
+}
+
+.banner-grid-images {
+  display: grid;
+  grid-template-columns: 354px 176px 176px 354px;
+  text-align: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.item-1 {
+  grid-row: 1/3;
+}
+
+.item-2 {
+  grid-row: 1/1;
+}
+
+.item-3 {
+  grid-row: 1/1;
+}
+
+.item-4 {
+  grid-row: 1/1;
+}
+
+.item-5 {
+  grid-column: 2/3;
+}
+
+.item-6 {
+  grid-column: 4/4;
+}
+
+.container {
+  max-width: 1111px;
+  width: 100%;
+  margin: 0px auto;
+}
+
+p {
+  font-size: 18px;
+  line-height: 28px;
+  color: #7A746E;
+  margin: 0px;
+}
+
+h1 {
+  font-size: 56px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0px;
+}
+
+button {
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: bold;
+  border: none;
+  border-radius: 28px;
+  cursor: pointer;
+}
+
+.body-btn {
+  width: 228px;
+  height: 56px;
+  background-color: #EB7565;
+  color: white;
+}
+.body-btn:hover {
+  background-color: #F6A560;
+}
+
+.introduction {
+  display: flex;
+  align-items: center;
+  gap: 125px;
+  margin-top: 136px;
+}
+.introduction img {
+  width: 445px;
+}
+
+.introduction-content p {
+  margin: 24px 0px;
+}
+
+.work {
+  text-align: center;
+}
+.work h4 {
+  font-size: 32px;
+}
+
+.work-images {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 56px 0px;
+}
+.work-images img {
+  border-radius: 10px;
+  width: 540px;
+  height: 360px;
+}
+
+.arrows {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+.arrows i {
+  background-color: black;
+  color: white;
+  padding: 24px;
+  border-radius: 50%;
+}
+.arrows i:hover {
+  background-color: #755CDE;
+  cursor: pointer;
+}
+
+.contact {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 88px 0px 56px;
+  padding: 65px 85px;
+  border-radius: 10px;
+}
+.contact p {
+  color: white;
+}
+
+.contact-content {
+  width: 540px;
+}
+
+@media screen and (max-width: 1100px) {
+  .container {
+    width: 690px;
+  }
+  .banner h1 {
+    font-size: 44px;
+  }
+  .banner-grid-images {
+    grid-row-gap: 24px;
+  }
+  .item-1 {
+    width: 333px;
+    height: 364px;
+  }
+  .item-2, .item-3 {
+    width: 155px;
+    height: 182px;
+  }
+  .item-4 {
+    grid-row: 3;
+    width: 333px;
+    height: 182px;
+  }
+  .item-5 {
+    width: 333px;
+    height: 158px;
+  }
+  .item-6 {
+    grid-row: 3;
+    grid-column: 2;
+    height: 182px;
+    width: 333px;
+  }
+  .introduction {
+    gap: 0px;
+  }
+  .introduction img {
+    width: 364px;
+    position: relative;
+    left: -37px;
+  }
+  .introduction h2 {
+    font-size: 32px;
+  }
+  .contact {
+    flex-direction: column;
+    text-align: center;
+  }
+  .contact p {
+    margin: 26px 0px;
+  }
+  .contact h2 {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 730px) {
+  .container {
+    width: 443px;
+  }
+  p {
+    font-size: 16px;
+  }
+  .banner h1 {
+    font-size: 36px;
+  }
+  .banner-grid-images {
+    grid-template-columns: 223px;
+  }
+  .item-1 {
+    width: 443px;
+    height: 364px;
+  }
+  .item-2, .item-3 {
+    grid-row: 3;
+    width: 210px;
+  }
+  .item-4 {
+    grid-row: 5;
+    width: 443px;
+    grid-column: 1/2;
+  }
+  .item-5 {
+    grid-row: 4;
+    width: 443px;
+    grid-column: 1/2;
+  }
+  .item-6 {
+    grid-row: 6;
+    grid-column: 1/2;
+    width: 443px;
+  }
+  .introduction {
+    flex-direction: column;
+    text-align: center;
+  }
+  .introduction img {
+    width: 300px;
+    left: 0;
+    margin-bottom: 40px;
+  }
+  .introduction h2 {
+    font-size: 26px;
+  }
+  .introduction p {
+    margin: 24px 46px;
+  }
+  .body-btn {
+    width: 176px;
+    height: 44px;
+  }
+  .work h4 {
+    font-size: 24px;
+  }
+  .work img {
+    width: 270px;
+    height: 180px;
+  }
+  .contact {
+    padding: 65px 0px;
+  }
+  .contact p {
+    margin: 26px 120px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
